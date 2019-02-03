@@ -1,1 +1,19 @@
 With a limited budget to target only 10% of consumers, identify the best classifier with strongest predictive power of "target" user.
+
+
+
+The best classifier among three classifiers I choose is Naïve Bayes classifier. 
+It has AUC of 0.65. The logistic regression classifier and decision tree classifier both have AUC 0.61.     
+
+Suppose we had a budget to target only 10% of consumers.
+Given this fact, would any of the "predictive models" trained in part (10) would be helpful? How?
+
+Using three different classifiers, I calculate and sort in a descending way the probability estimates of ‘responder’ for each customer. Since we had a budget to target only 10% of consumers, I will select the top 10% of the customers with the highest probability estimates of ‘responder’ to be the targeted customers in the marketing campaign.
+
+Below I summarize the proportion of responder when I select top 10% % of the customers with the highest probability estimates of ‘responder’ using three different classifiers. All are higher than the original proportion (6.13%). Among them the decision tree classifier is the most helpful. This shows that all the predictive models trained in part (10) will be helpful.  
+
+Classifier	Responder/Non-Responder
+Naives Bayes	520/3527=14.7434
+Logistic Regression	519/3527=14.7150
+Decision Tree	1018/2509=40.5739
+
